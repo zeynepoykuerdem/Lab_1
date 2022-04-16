@@ -1,0 +1,28 @@
+#def square(x):
+  # return x * x
+#def sumofsquares(x,y):
+ #   return square(x)+square(y)
+#print(sumofsquares(6,5))
+#f=square
+#f(4)
+
+name=input("What is your name?")
+print("Hello, "+ name)
+studentID= input("What 's your student ID ?")
+print("Your student ID is: " + studentID)
+print(name +" please enter two values.. ")
+number1=int(input("For number 1 : "))
+number2=int(input("For number 2 : "))
+sum=int(number1+number2)
+diff=int(abs(number1-number2))
+prod=int (number1*number2)
+message=(
+    f"Hi {name}.\n"
+    f"Number 1 is {number1}.\n"
+    f"Number 2 is {number2}.\n"
+    f"The sum is {sum}.\n"
+    f"The difference is {diff}.\n"
+    f"The multiplication is {prod}.\n"
+    )
+print(message)
+print("*\n"+"**\n"+"***")

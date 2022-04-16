@@ -1,0 +1,44 @@
+#include <iostream>
+using namespace std;
+void calculator();
+int main() {
+    /* cout << "Hello, World!" << endl;// rather than using namespace std;*/
+    string name;
+    cout<<"What is your name?";
+    getline(cin,name);// to read a line of text
+    cout<< "Your name is: "<< name;
+    int schoolID;
+
+    cout<<" \nWhat is your school id?";
+    cin>> name;
+    cout<< "Your school id is: " << name;
+    calculator();
+    int i, j, cnt;
+    cout<<"\n Enter Number of Rows : ";// cnt
+    cin>>cnt;
+    cout<<"\n";// blank space 
+    for(i=0; i<cnt; i++)
+    {
+        for(j=cnt; j>i; j--)
+        {
+            cout<<" * ";
+        }
+        cout<<"\n";
+    }
+    return 0;
+
+}
+void calculator(){
+    int number1, number2;
+    cout<<"\n Number 1 is: ";
+    cin>>number1;
+    cout<<"Number 2 is: ";
+    cin>>number2;
+    int sum= number1+ number2;
+    int diff= abs(number1-number2);
+    int prod=number2*number1;
+    cout<<"\nThe sum of two numbers is: "<< sum;
+    cout<<"\nThe difference of two numbers is: "<< diff;
+    cout<<"\nThe multiplication of two numbers is: "<< prod;
+
+}
